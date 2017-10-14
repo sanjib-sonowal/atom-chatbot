@@ -1,0 +1,31 @@
+{% extends 'chatbot/base.html' %}
+{% block title %}Welcome{% endblock %}
+
+{% block body %}
+<div class="albums-container container-fluid">
+
+    <!-- Albums -->
+    <div class="row">
+        <div class="chat">
+            <div class="chat-title">
+                <h1>I am ATOM</h1>
+                <h2>How can I help you?</h2>
+                <figure class="avatar">
+		            <img src="static/res/botim.png" />
+                </figure>
+            </div>
+            <div class="chat col-sm-12 text-center">
+                <div class="messages">
+                    <div class="messages-content"></div>
+                </div>
+                <div class="message-box">
+                    <textarea type="text" class="message-input" placeholder="Type a message"></textarea>
+                    <button type="submit" class="message-submit">Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg"></div>
+    </div>
+
+</div>
+{% endblock %}
